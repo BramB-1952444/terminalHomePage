@@ -20,13 +20,15 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 // export const gui = async (args: string[]): Promise<string> => {
-  // window.open('https://m4tt72.com', '_self');
+// window.open('https://m4tt72.com', '_self');
 
-  // return 'Opening GUI version...';
+// return 'Opening GUI version...';
 // };
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:info@bramboeckx.be');
+  setTimeout(function () {
+    window.open('mailto:info@bramboeckx.be');
+  }, 1000);
 
   return 'Opening mailto:info@bramboeckx.be"...';
 };
@@ -44,13 +46,17 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+  setTimeout(function () {
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  }, 1000);
 
   return `Permission denied: unable to run the command '${args[0]}' as root.`;
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
-  window.open('https://github.com/m4tt72/terminal', '_blank');
+  setTimeout(function () {
+    window.open('https://github.com/m4tt72/terminal', '_blank');
+  }, 1000);
 
   return 'Opening repository...';
 };
