@@ -17,7 +17,7 @@
     "dev": "next dev",
     "next": "next",
     "preexport": "next build",
-    "export": "next export",
+    "export": "next export -o _static/",
     "lint": "eslint .",
     "prepare": "husky install"
   },
